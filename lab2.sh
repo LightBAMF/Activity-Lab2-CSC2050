@@ -6,7 +6,7 @@ fi
 
 
 
-if [[ -f "$1" && "$1" == *.c ]]; then
+if [[ -f "$1" && "$1" = *.c ]]; then
 owner=$(ls -l $1 | awk '{print $3}')
 file_name=$1
 month=$(ls -l $1 | awk '{print $6}')
